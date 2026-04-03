@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="A new web page">
+    <meta name="robots" content="index, follow">
+    <link rel="icon" href="favicon.ico">
+    <title>Document</title>
+    <link rel="stylesheet" href="rest.css">
+</head>
+<body>
+  <nav id="navbar">
+  <a class="nav-logo" href="Restaurant.html">Maison Aurel</a>
+  <ul class="nav-links">
+    <li><a href="story.html">Story</a></li>
+    <li><a href="#">Menu</a></li>
+    <li><a href="#coffee">Coffee</a></li>
+    <li><a href="#cakes">Pastries</a></li>
+    <li><a href="#drinks">Bar</a></li>
+    <li><a href="#reserve">Reserve</a></li>
+  </ul>
+  <a class="nav-cta" href="#reserve">Book a Table</a>
+</nav>
+  <section class="menu reveal" id="menu">
+  <div class="menu-header">
+    <div>
+      <div class="section-label">À La Carte</div>
+      <h2 class="section-title">The <em>Menu</em></h2>
+    </div>
+  </div>
+  <div class="menu-tabs">
+    <button class="tab-btn active" onclick="switchTab('starters')">Starters</button>
+    <button class="tab-btn" onclick="switchTab('mains')">Mains</button>
+    <button class="tab-btn" onclick="switchTab('sides')">Sides</button>
+  </div>
+
+  <!-- Starters -->
+  <div class="menu-panel active" id="starters">
+    <div class="menu-grid">
+      <div class="menu-item">
+        <div class="image">
+          <img src="images/f5d6714b42689d005875c429a48be1c8.jpg">
+        </div>
+        <div class="item-header"><span class="item-name">Seared Scallops</span><span class="item-price">$24</span></div>
+        <p class="item-desc">Pan-seared hand-dived scallops, cauliflower purée, crispy capers, brown butter emulsion and micro herbs.</p>
+        <span class="item-tag">Chef's Pick</span>
+      </div>
+      <div class="menu-item">
+        <div class="image">
+          <img src="images/tuna1.jpg">
+        </div>
+        <div class="item-header"><span class="item-name">Tuna Tartare</span><span class="item-price">$22</span></div>
+        <p class="item-desc">Yellowfin tuna, avocado mousse, sesame oil, yuzu dressing, toasted brioche crisps and tobiko.</p>
+      </div>
+      <div class="menu-item">
+        <div class="image">
+          <img src="images/5aee59bdd7fa2becb3949b00ee83381e.jpg">
+        </div>
+        <div class="item-header"><span class="item-name">Burrata & Heritage Tomato</span><span class="item-price">$18</span></div>
+        <p class="item-desc">Hand-stretched burrata, slow-roasted heritage tomatoes, aged balsamic, pistou and Maldon salt.</p>
+        <span class="item-tag">Vegetarian</span>
+      </div>
+      <div class="menu-item">
+        <div class="image">
+          <img src="images/d9c7908f90239d961aebf951f437002e.jpg">
+        </div>
+        <div class="item-header"><span class="item-name">Duck Liver Parfait</span><span class="item-price">$20</span></div>
+        <p class="item-desc">Silky duck liver parfait, port wine gel, toasted sourdough, cornichons and candied walnuts.</p>
+      </div>
+      <div class="menu-item">
+        <div class="image">
+          <img src="images/8fe6ea8f750be35a5d77a48dbd88c5b7.jpg">
+        </div>
+        <div class="item-header"><span class="item-name">Lobster Bisque</span><span class="item-price">$19</span></div>
+        <p class="item-desc">Rich Atlantic lobster bisque, tarragon cream, cognac flambé, served with rouille toasts.</p>
+        <span class="item-tag">Seasonal</span>
+      </div>
+      <div class="menu-item">
+        <div class="image">
+          <img src="images/hilib3.jpg">
+        </div>
+        <div class="item-header"><span class="item-name">Truffle Arancini</span><span class="item-price">$16</span></div>
+        <p class="item-desc">Crispy risotto balls, black truffle, aged Parmesan, lemon aioli and fresh chives.</p>
+        <span class="item-tag">Vegetarian</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mains -->
+  <div class="menu-panel" id="mains">
+    <div class="menu-grid">
+      <div class="menu-item">
+        <div class="image">
+          <img src="images/37f7455902eb7195e764d8c07a935f7f.jpg">
+
+        </div>
+        <div class="item-header"><span class="item-name">28-Day Aged Ribeye</span><span class="item-price">$58</span></div>
+        <p class="item-desc">400g dry-aged Black Angus ribeye, bone marrow butter, triple-cooked fries, watercress and a rich red wine jus.</p>
+        <span class="item-tag">Chef's Favourite</span>
+      </div>
+      <div class="menu-item">
+        <div class="image">
+          <img src="images/tuna5.jpg">
+        </div>
+        <div class="item-header"><span class="item-name">Roasted Halibut</span><span class="item-price">$46</span></div>
+        <p class="item-desc">Line-caught halibut, saffron velouté, fennel confit, samphire, crushed new potatoes and shellfish oil.</p>
+      </div>
+      <div class="menu-item">
+        <div class="image">
+          <img src="images/51fa529d006fe7f2e7add065fa9cd4df.jpg">
+        </div>
+        <div class="item-header"><span class="item-name">Confit Duck Leg</span><span class="item-price">$42</span></div>
+        <p class="item-desc">Slow-cooked Gressingham duck leg, cherry gastrique, pommes sarladaises, savoy cabbage and crispy duck skin.</p>
+      </div>
+      <div class="menu-item">
+        <div class="image">
+          <img src="images/330bf7963360ed64fa8264b173368c96.jpg">
+        </div>
+        <div class="item-header"><span class="item-name">Wild Mushroom Risotto</span><span class="item-price">$32</span></div>
+        <p class="item-desc">Carnaroli rice, mixed wild mushrooms, aged Parmesan foam, truffle oil, shaved pecorino and crispy shallots.</p>
+        <span class="item-tag">Vegetarian</span>
+      </div>
+      <div class="menu-item">
+        <div class="image">
+          <img src="images/hilib.jpg">
+        </div>
+        <div class="item-header"><span class="item-name">Rack of Lamb</span><span class="item-price">$52</span></div>
+        <p class="item-desc">Herb-crusted French-trimmed rack of lamb, ratatouille, rosemary jus, lavender salt and roasted garlic purée.</p>
+        <span class="item-tag">Seasonal</span>
+      </div>
+      <div class="menu-item">
+        <div class="image">
+          <img src="images/7b815ac80b62cffe0728c58ab83856b3.jpg">
+        </div>
+        <div class="item-header"><span class="item-name">Lobster Linguine</span><span class="item-price">$48</span></div>
+        <p class="item-desc">Freshly made linguine, half-shell lobster, cherry tomato bisque, chilli, garlic, white wine and fresh basil.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sides -->
+  <div class="menu-panel" id="sides">
+    <div class="menu-grid">
+      <div class="menu-item">
+        <div class="image">
+          <img src="images/0ca2d2ff97355541ff3880ed58618c55.jpg">
+        </div>
+        <div class="item-header"><span class="item-name">Truffle Mac & Cheese</span><span class="item-price">$14</span></div>
+        <p class="item-desc">Gruyère, comté and truffle béchamel, crispy panko crust, White truffle shavings.</p>
+      </div>
+      <div class="menu-item">
+        <div class="image">
+          <img src="images/3122236cb24b723bd7e719a460952e4b.jpg">
+        </div>
+        <div class="item-header"><span class="item-name">Glazed Carrots</span><span class="item-price">$9</span></div>
+        <p class="item-desc">Baby heritage carrots, honey and miso glaze, toasted sesame, fresh dill.</p>
+        <span class="item-tag">Vegan</span>
+      </div>
+      <div class="menu-item">
+        <div class="image">
+          <img src="images/9d6be28f343a2b86c435ff831ec44ec0.jpg">
+        </div>
+        <div class="item-header"><span class="item-name">Smoked Mash</span><span class="item-price">$10</span></div>
+        <p class="item-desc">Robuchon-style pommes purée, smoked butter, chive oil, Maldon salt.</p>
+        <span class="item-tag">Vegetarian</span>
+      </div>
+      <div class="menu-item">
+        <div class="image">
+          <img src="images/c295df0b9e6d1d8d964a4fff7a2079db.jpg">
+        </div>
+        <div class="item-header"><span class="item-name">Parmesan Fries</span><span class="item-price">$11</span></div>
+        <p class="item-desc">Triple-cooked fries, aged Parmesan snow, rosemary salt, truffle aioli.</p>
+      </div>
+      <div class="menu-item">
+        <div class="image">
+          <img src="images/ea7be6322d1b338be9aee95d7a709db5.jpg">
+        </div>
+        <div class="item-header"><span class="item-name">Seasonal Greens</span><span class="item-price">$8</span></div>
+        <p class="item-desc">Tenderstem broccoli, charred asparagus, lemon and tarragon butter, toasted almonds.</p>
+        <span class="item-tag">Vegan</span>
+      </div>
+      <div class="menu-item">
+        <div class="image">
+          <img src="images/f0067c2148452b1824a6cf3cf844a79e.jpg">
+        </div>
+        <div class="item-header"><span class="item-name">Sourdough & Butter</span><span class="item-price">$7</span></div>
+        <p class="item-desc">House-baked sourdough, cultured whipped butter, smoked sea salt, fennel seeds.</p>
+        <span class="item-tag">Vegetarian</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  // Nav scroll
+  const nav = document.getElementById('navbar');
+  window.addEventListener('scroll', () => {
+    nav.classList.toggle('scrolled', window.scrollY > 60);
+  });
+
+  // Tab switching
+  function switchTab(name) {
+    document.querySelectorAll('.menu-panel').forEach(p => p.classList.remove('active'));
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    document.getElementById(name).classList.add('active');
+    event.target.classList.add('active');
+  }
+
+  // Reveal on scrol
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('visible');
+        observer.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.08 });
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+</script>
+</body>
+</html>

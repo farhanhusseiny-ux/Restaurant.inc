@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="A new web page">
+    <meta name="robots" content="index, follow">
+    <link rel="icon" href="favicon.ico">
+    <title>Document</title>
+    <link rel="stylesheet" href="rest.css">
+</head>
+<body>
+  <nav id="navbar">
+  <a class="nav-logo" href="index.html">Maison Aurel</a>
+  <ul class="nav-links">
+    <li><a href="#">Story</a></li>
+    <li><a href="menu.html">Menu</a></li>
+    <li><a href="#coffee">Coffee</a></li>
+    <li><a href="#cakes">Pastries</a></li>
+    <li><a href="#drinks">Bar</a></li>
+    <li><a href="#reserve">Reserve</a></li>
+  </ul>
+  <a class="nav-cta" href="#reserve">Book a Table</a>
+</nav>
+  <section class="about reveal" id="about">
+  <div class="about-visual">
+    <div class="about-visual-text">
+      <div class="big-num">12+</div>
+      <p>Years of culinary mastery</p>
+    </div>
+  </div>
+  <div class="about-content">
+    <div class="section-label">Our Story</div>
+    <h2 class="section-title">Crafted with<br><em>Intention</em></h2>
+    <div class="divider"></div>
+    <p class="section-desc">Maison Aurel was born from a dream — to create a space where fine dining meets the warmth of a neighbourhood café. Our head chef, trained in Lyon and Tokyo, brings a global perspective to locally sourced ingredients. Every dish that leaves our kitchen carries a signature: restraint, balance, and a touch of the unexpected.</p>
+    <p class="section-desc" style="margin-top:20px;">We believe food is the most intimate form of hospitality. That's why every detail — from the grain of our oak tables to the weight of our cutlery — is chosen to disappear into the background, leaving only the experience.</p>
+    <div style="display:flex; gap:40px; margin-top:40px;">
+      <div>
+        <div style="font-family:'Cormorant Garamond',serif;font-size:2.5rem;color:var(--yellow)">40+</div>
+        <div style="font-size:.75rem;color:var(--grey);letter-spacing:.1em">Menu Items</div>
+      </div>
+      <div>
+        <div style="font-family:'Cormorant Garamond',serif;font-size:2.5rem;color:var(--yellow)">3</div>
+        <div style="font-size:.75rem;color:var(--grey);letter-spacing:.1em">Dining Spaces</div>
+      </div>
+      <div>
+        <div style="font-family:'Cormorant Garamond',serif;font-size:2.5rem;color:var(--yellow)">98%</div>
+        <div style="font-size:.75rem;color:var(--grey);letter-spacing:.1em">Happy Guests</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  // Nav scroll
+  const nav = document.getElementById('navbar');
+  window.addEventListener('scroll', () => {
+    nav.classList.toggle('scrolled', window.scrollY > 60);
+  });
+
+  // Tab switching
+  function switchTab(name) {
+    document.querySelectorAll('.menu-panel').forEach(p => p.classList.remove('active'));
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    document.getElementById(name).classList.add('active');
+    event.target.classList.add('active');
+  }
+
+  // Reveal on scrol
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('visible');
+        observer.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.08 });
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+</script>
+</body>
+</html>
